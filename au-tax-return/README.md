@@ -44,12 +44,30 @@ au-tax-return/
     └── tax_calc.py                 # tax/Medicare/CGT/rental estimator (+ CLI)
 ```
 
+## Install
+
+**One command (recommended)** — installs the skill into your Claude skills directory:
+
+```bash
+# For the current user (~/.claude/skills/au-tax-return)
+npx github:Ajeesh24/au-tax-return
+
+# Into the current project (./.claude/skills/au-tax-return)
+npx github:Ajeesh24/au-tax-return --project
+
+# Custom location, or overwrite an existing install
+npx github:Ajeesh24/au-tax-return --dir <path>
+npx github:Ajeesh24/au-tax-return --force
+```
+
+**Manual** — copy the `au-tax-return/` folder into your skills directory, or point
+Claude at `SKILL.md`.
+
 ## Using it
 
-Install as a Claude skill (copy `au-tax-return/` into your skills directory) or point
-Claude at `SKILL.md`. Then ask, e.g. *"Help me do my 2025–26 tax return — here are my
-documents."* Claude will confirm the year and residency, take a document inventory,
-interview you, and produce the summary.
+After installing, restart Claude Code (or reload skills) and ask, e.g. *"Help me do my
+2025–26 tax return — here are my documents."* Claude will confirm the year and
+residency, take a document inventory, interview you, and produce the summary.
 
 Quick calculator check:
 

@@ -1,0 +1,40 @@
+{
+  "name": "au-tax-return-skill",
+  "version": "1.0.0",
+  "description": "Installer for the au-tax-return Claude skill — helps individuals in Australia prepare their own tax return (PAYG, investment property, CGT) with year-aware rules and myTax-ready output.",
+  "bin": {
+    "au-tax-return-skill": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "node bin/cli.js --help"
+  },
+  "files": [
+    "bin/cli.js",
+    "au-tax-return/**/*"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skill",
+    "tax",
+    "australia",
+    "ato",
+    "mytax",
+    "cgt",
+    "payg",
+    "rental-property"
+  ],
+  "author": "Ajeesh24",
+  "license": "MIT",
+  "homepage": "https://github.com/Ajeesh24/au-tax-return",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ajeesh24/au-tax-return.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ajeesh24/au-tax-return/issues"
+  },
+  "engines": {
+    "node": ">=16.7.0"
+  }
+}

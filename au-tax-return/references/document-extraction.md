@@ -60,7 +60,7 @@ May list many accounts on one page (e.g. a "Interest and tax summary"). For each
 - On a **purchase**, these feed the CGT cost base for when the property is eventually
   sold — record them even though there's no deduction now.
 
-## Depreciation schedule (Duo Tax, BMT, etc.)
+## Depreciation schedule (from a quantity surveyor)
 
 - **Division 43 capital works** — the per-financial-year deductible amount (typically
   2.5% of construction cost over 40 years). Take the amount **for the user's income

@@ -35,7 +35,7 @@ tax payable/refundable — always aiming for the **maximum legitimate benefit**.
 ## Golden rules (read every time)
 
 - **Never invent numbers.** Every figure comes from a document the user gave you or an answer they typed. If you can't find it, ask. Flag any value you estimated.
-- **Cite the source of each figure** in the working summary (e.g. "gross wages $84,120 — from PAYG income statement" / "loan interest $2,490.11 — CommBank interest summary").
+- **Cite the source of each figure** in the working summary (e.g. "gross wages $84,120 — from PAYG income statement" / "loan interest $2,490.11 — bank interest summary").
 - **Confirm before deducting.** A cost is only deductible if it meets ATO tests. When unsure whether something qualifies (or how it's apportioned), ask rather than assume.
 - **Show your working** so the user can check every line against their own records and ATO prefill.
 - **Only deductible-if-substantiated.** Remind the user they must keep records; don't claim what can't be supported.
@@ -73,7 +73,7 @@ document, read it and classify it. Real-world documents vary a lot — expect th
 - **Bank / broker interest & tax summary** — interest earned (income) and interest charged on loans (possible deduction). A single statement may list several accounts/loans.
 - **Loan / mortgage statements** — interest, and borrowing-expense components.
 - **Settlement statement** (property purchase/sale) — dates, price, adjustments, stamp duty, legal fees (cost-base and CGT inputs).
-- **Depreciation schedule** (e.g. Duo Tax, BMT) — Div 43 capital works and Div 40 plant per financial year; watch the "not eligible" flag for second-hand plant in residential rentals.
+- **Depreciation schedule** (from a quantity surveyor) — Div 43 capital works and Div 40 plant per financial year; watch the "not eligible" flag for second-hand plant in residential rentals.
 - **Invoices / receipts** — repairs, maintenance, cleaning, pest, insurance, council, water, agent fees, etc.
 - **Managing agent annual statement** — consolidated rental income and expenses.
 - **Contract notes / crypto CSV / sale statements** — CGT events.

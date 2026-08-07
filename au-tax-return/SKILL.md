@@ -66,8 +66,17 @@ ato.gov.au is the authority; tell the user to confirm before lodging.
 
 ## Step 1 — Take inventory of documents
 
-Ask the user what they have, and to point you at any files (PDF/image). For each
-document, read it and classify it. Real-world documents vary a lot — expect things like:
+**Tell the user where to put their files.** Ask them to drop all their PDFs and
+images into the skill's `documents/` folder (see `documents/README.md`), then say
+they're ready. This is the easiest path for non-technical users — they don't have to
+give you paths one by one.
+
+- Look in `documents/` first and read **every** file in there (ignore `README.md`).
+- If the user pasted a file elsewhere or gave you a path, read that too.
+- If the folder is empty, ask them to add their files there (or paste paths).
+
+For each document, read it and classify it. Real-world documents vary a lot — expect
+things like:
 
 - **PAYG income statement / payment summary** (from ATO or employer) — gross, tax withheld, allowances, RFBA, reportable super.
 - **Bank / broker interest & tax summary** — interest earned (income) and interest charged on loans (possible deduction). A single statement may list several accounts/loans.

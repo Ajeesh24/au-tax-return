@@ -5,7 +5,10 @@ attachments/
 *.png
 *.jpg
 *.jpeg
-!/.claude/skills/**/assets/*
+
+# Document inbox: ignore everything the user drops in, but keep the folder + its README
+au-tax-return/documents/*
+!au-tax-return/documents/README.md
 
 # Working files produced during a tax session
 /sessions/

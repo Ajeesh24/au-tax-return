@@ -65,9 +65,11 @@ Claude at `SKILL.md`.
 
 ## Using it
 
-After installing, restart Claude Code (or reload skills) and ask, e.g. *"Help me do my
-2025–26 tax return — here are my documents."* Claude will confirm the year and
-residency, take a document inventory, interview you, and produce the summary.
+After installing, **drop your PDFs/photos into the `documents/` folder**
+(see `documents/README.md`), restart Claude Code (or reload skills), and ask, e.g.
+*"I've added my documents — help me do my 2025–26 tax return."* Claude reads everything
+in `documents/`, confirms the year and residency, interviews you, and produces the
+summary. Files in `documents/` are git-ignored and stay on your machine.
 
 Quick calculator check:
 

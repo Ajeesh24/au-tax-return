@@ -35,12 +35,15 @@ point Claude at `au-tax-return/SKILL.md`.
 
 ## Use
 
-After installing, restart Claude Code (or reload skills) and ask, e.g.:
+After installing, **drop your PDFs/photos into the skill's `documents/` folder**
+(see `au-tax-return/documents/README.md`), restart Claude Code (or reload skills),
+and ask, e.g.:
 
-> "Help me do my 2025–26 tax return — here are my documents."
+> "I've added my documents — help me do my 2025–26 tax return."
 
-Claude confirms the income year and residency, takes a document inventory, interviews
-you, and produces the summary.
+Claude reads everything in `documents/`, confirms the income year and residency,
+interviews you to fill gaps, and produces the summary. Files in `documents/` are
+git-ignored — they stay on your machine and are never committed.
 
 ## Key properties
 
@@ -62,6 +65,7 @@ you, and produces the summary.
 └── au-tax-return/                  # the skill itself
     ├── SKILL.md                    # orchestration: interview + output flow
     ├── README.md                   # skill-level docs
+    ├── documents/                  # ← drop your PDFs/photos here (git-ignored)
     ├── references/
     │   ├── rates.md                # rates & rules PER YEAR (human-readable)
     │   ├── document-extraction.md  # how to read each document type

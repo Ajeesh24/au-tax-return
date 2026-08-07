@@ -1,0 +1,26 @@
+# Personal tax documents — never commit
+attachments/
+*.eml
+*.pdf
+*.png
+*.jpg
+*.jpeg
+!/.claude/skills/**/assets/*
+
+# Working files produced during a tax session
+/sessions/
+*_worksheet.md
+*_return_summary.md
+tax_summary*.json
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

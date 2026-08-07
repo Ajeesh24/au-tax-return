@@ -1,0 +1,63 @@
+{
+  "_comment": "Verify all figures against ato.gov.au before relying on them. Keep in sync with references/rates.md. Brackets are for RESIDENT individuals only. thresholds are lower bound inclusive; 'base' is amount of tax at start of bracket; 'rate' is marginal rate above 'over'.",
+  "years": {
+    "2024-25": {
+      "resident_brackets": [
+        {"over": 0,      "base": 0,     "rate": 0.0},
+        {"over": 18200,  "base": 0,     "rate": 0.16},
+        {"over": 45000,  "base": 4288,  "rate": 0.30},
+        {"over": 135000, "base": 31288, "rate": 0.37},
+        {"over": 190000, "base": 51638, "rate": 0.45}
+      ],
+      "medicare_levy_rate": 0.02,
+      "medicare_levy_single_threshold": 26000,
+      "medicare_levy_single_upper": 32500,
+      "mls_singles_tiers": [
+        {"upto": 97000,    "rate": 0.0},
+        {"upto": 113000,   "rate": 0.01},
+        {"upto": 151000,   "rate": 0.0125},
+        {"upto": null,     "rate": 0.015}
+      ],
+      "mls_family_tiers": [
+        {"upto": 194000,   "rate": 0.0},
+        {"upto": 226000,   "rate": 0.01},
+        {"upto": 302000,   "rate": 0.0125},
+        {"upto": null,     "rate": 0.015}
+      ],
+      "lito": {"max": 700, "full_upto": 37500, "taper1_rate": 0.05, "taper1_upto": 45000, "taper2_rate": 0.015, "zero_at": 66667},
+      "cgt_discount": 0.5,
+      "cents_per_km": 0.88,
+      "wfh_fixed_rate_per_hour": 0.70,
+      "verified": false
+    },
+    "2025-26": {
+      "resident_brackets": [
+        {"over": 0,      "base": 0,     "rate": 0.0},
+        {"over": 18200,  "base": 0,     "rate": 0.16},
+        {"over": 45000,  "base": 4288,  "rate": 0.30},
+        {"over": 135000, "base": 31288, "rate": 0.37},
+        {"over": 190000, "base": 51638, "rate": 0.45}
+      ],
+      "medicare_levy_rate": 0.02,
+      "medicare_levy_single_threshold": 27222,
+      "medicare_levy_single_upper": 34027,
+      "mls_singles_tiers": [
+        {"upto": 97000,    "rate": 0.0},
+        {"upto": 113000,   "rate": 0.01},
+        {"upto": 151000,   "rate": 0.0125},
+        {"upto": null,     "rate": 0.015}
+      ],
+      "mls_family_tiers": [
+        {"upto": 194000,   "rate": 0.0},
+        {"upto": 226000,   "rate": 0.01},
+        {"upto": 302000,   "rate": 0.0125},
+        {"upto": null,     "rate": 0.015}
+      ],
+      "lito": {"max": 700, "full_upto": 37500, "taper1_rate": 0.05, "taper1_upto": 45000, "taper2_rate": 0.015, "zero_at": 66667},
+      "cgt_discount": 0.5,
+      "cents_per_km": 0.88,
+      "wfh_fixed_rate_per_hour": 0.70,
+      "verified": false
+    }
+  }
+}

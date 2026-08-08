@@ -32,13 +32,24 @@ live myTax for the user's year — the ATO adjusts wording between years.**
 | Cost of managing tax affairs | Cost of managing tax affairs | D10 |
 | Personal super contributions | Personal superannuation contributions | D12 |
 
-## Rent sub-labels (within the Rent section)
+## Rent section — exact myTax fields (each has a Total AND a "Your share" box)
 
-Gross rent; then deductions: Interest on loans; Capital works (Div 43); Depreciation
-/ decline in value (Div 40); Council rates; Water charges; Land tax; Insurance;
-Property agent fees/commission; Advertising; Repairs & maintenance; Borrowing expenses;
-Body corporate; Cleaning; Gardening; Pest control; Sundry rental expenses. Enter each
-at the **owner's share**.
+**Property details:** Property name; Address; Date property genuinely available for
+rent (dd/mm/yyyy); Number of weeks property was rented this year; Ownership percentage.
+
+**Income:** Total rental income / Your share of rental income; Total other
+rental-related income / Your share. (myTax computes Total gross rent + Your share.)
+
+**Expenses** (each = Total + Your share), in myTax's order and wording:
+Advertising · Body corporate fees · Deductible borrowing expenses · Cleaning ·
+Council rates · **Capital allowances – manually calculated** (Div 40 decline in value) ·
+Gardening · Insurance · **Interest on loans** · Land tax · Legal fees · Pest control ·
+**Agent fees** · **Repairs** · **Capital works – manually calculated** (Div 43) ·
+Stationery, phone and postage · Travel expenses · Water charges · Other expenses.
+
+myTax computes Total expenses, Your share of total expenses, Net rent, and Your share
+of net rent (read-only). Enter income and expenses at **both** the full (Total) amount
+and the owner's share — myTax asks for both.
 
 ## Offsets / adjustments / other
 

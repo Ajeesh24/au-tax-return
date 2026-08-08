@@ -88,14 +88,71 @@ rental (negative) into `scripts/tax_calc.py` as `net_rental`.
 
 ## myTax form-filling output for this section
 
-Per property, at the **owner's share**:
-- `Rent — [address] — Gross rent → $____`
-- Then each deduction category myTax lists, e.g.:
-  - `Rent — Interest on loan(s) → $____`
-  - `Rent — Capital works deductions (Div 43) → $____`
-  - `Rent — Depreciation (Div 40) → $____` (only eligible/new assets)
-  - `Rent — Council rates → $____`, `Water charges → $____`, `Insurance → $____`,
-    `Property agent fees → $____`, `Repairs & maintenance → $____`,
-    `Borrowing expenses → $____`, `Pest/cleaning/other → $____`
-- Note the **whole-property figure and the share** for each so the user can verify,
-  e.g. "Interest $3,367.65 total × 50% = $1,683.83".
+**Match the myTax Rent screen exactly.** For EVERY field, myTax asks for a **Total**
+(whole-property, 100%) value AND **Your share** value — so output *both* columns for
+every line. myTax computes the read-only totals (gross rent, total expenses, net rent).
+
+Output the property block in this exact order and with these exact field names:
+
+**Rental property details**
+- `Property name → ____`
+- `Address → ____`
+- `Date property genuinely available for rent → dd/mm/yyyy`
+- `Number of weeks property was rented this year → ____`
+- `Ownership percentage → ____%`
+
+**Rental income** — give Total and Your share:
+- `Total rental income → $____`  |  `Your share of rental income → $____`
+- `Total other rental-related income → $____`  |  `Your share → $____`
+  (bond retained, insurance payouts, tenant reimbursements)
+
+**Rental expenses** — myTax lists these exact fields, each with Total + Your share.
+Only output the ones that apply; map the user's expenses to these names:
+- `Advertising`
+- `Body corporate fees`
+- `Deductible borrowing expenses` — spread over 5 years; this year's portion only
+- `Cleaning`
+- `Council rates`
+- `Capital allowances – manually calculated` — **Div 40** decline in value (eligible/
+  new assets only; not second-hand residential plant)
+- `Gardening`
+- `Insurance`
+- `Interest on loans` — combine all deductible loan interest (main + equity loan)
+- `Land tax`
+- `Legal fees`
+- `Pest control`
+- `Agent fees` — property manager commission + letting fees
+- `Repairs` — immediate repairs & maintenance (not improvements)
+- `Capital works – manually calculated` — **Div 43** (2.5%), this year's amount from
+  the depreciation schedule
+- `Stationery, phone and postage`
+- `Travel expenses` — note: travel to inspect residential rental is generally NOT
+  deductible for individuals; usually leave blank
+- `Water charges`
+- `Other expenses` — anything not fitting above (e.g. safety-check fees, quantity
+  surveyor fee, smoke alarm servicing, sundry)
+
+**Ground every figure in its source document.** For each line, show the working AND
+the document(s) it came from, so the amount is fully traceable, e.g.:
+
+`Interest on loans → Total $3,367.65 | Your share (50%) $1,683.83`
+  · $2,490.11 main loan + $877.54 equity loan — *bank interest summary*
+
+Where a field aggregates several invoices, list each one with its amount and supplier
+so the total is auditable, e.g.:
+
+`Repairs → Total $451.50 | Your share (50%) $225.75`
+  · $82.50 lock replacement — *Invoice: front lock*
+  · $287.00 tap/mould fix — *Invoice: maintenance services*
+  · $82.00 fly-screen repair — *Invoice: glass & screens*
+
+If an expense doesn't obviously map (e.g. an electrical/gas safety check), put it in
+`Repairs` if it's a repair or `Other expenses` otherwise, name the source invoice, and
+note the choice so the user can confirm. **Never enter a rental figure without a
+source document or an explicit user-stated amount behind it** — if you can't tie a
+number to a document, ask the user rather than guessing.
+
+> Tip: myTax also offers a **"Depreciation and capital allowances tool"** that
+> computes Div 40/Div 43 for you. If the user prefers that, they enter asset details
+> there instead of typing the capital allowances/capital works figures manually — tell
+> them the totals from the depreciation schedule either way.
